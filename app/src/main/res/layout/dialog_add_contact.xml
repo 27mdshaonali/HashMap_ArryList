@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/etContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:hint="Enter Contact Number"
+        android:inputType="phone"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/etMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:hint="Enter E-Mail"
+        android:inputType="textEmailAddress"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Save Contact"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

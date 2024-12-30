@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/itemLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:weightSum="5"
+                tools:ignore="UselessLeaf">
+
+                <TextView
+                    android:id="@+id/itemName"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:includeFontPadding="true"
+                    android:text="Name"
+                    android:textColor="#353535"
+                    android:textFontWeight="@integer/material_motion_duration_short_1"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,NestedWeights,UnusedAttribute" />
+
+                <TextView
+                    android:id="@+id/itemContactNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.3"
+                    android:text="+8801712345678"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/itemEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.3"
+                    android:text="example@gmail.com"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText" />
+
+
+            </LinearLayout>
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/itemImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_weight="7"
+                android:scaleType="fitXY"
+                android:src="@drawable/shaon"
+                app:riv_border_color="@color/lavender_blush"
+                app:riv_border_width="10dp"
+                app:riv_corner_radius="50dp"
+                app:riv_oval="true"
+                app:riv_tile_mode="clamp"
+                tools:ignore="UnusedAttribute" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
